@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './img/Logo.png';
 import './header.css';
+import $ from 'jquery';
 
 class Header extends Component {
 
@@ -10,6 +11,14 @@ class Header extends Component {
   }
   handleClick() {
     console.log('Click happened');
+    if ($('.header__nav-icon-item').hasClass('active')) {
+        console.log('tem');
+        $('.header__nav-icon-item').removeClass('active');
+        $('.header__nav-icon-item').addClass('reverse');
+    } else {
+        $('.header__nav-icon-item').removeClass('reverse');
+        $('.header__nav-icon-item').addClass('active');
+    };
   }
 
   render() {
@@ -17,9 +26,7 @@ class Header extends Component {
         <div className="header">
           <div className="header__nav">
               <div className="header__nav-icon" onClick={this.handleClick}>
-                <span className="header__nav-icon"></span>
-                <span className="header__nav-icon"></span>
-                <span className="header__nav-icon"></span>
+                <div className="header__nav-icon-item"></div>
               </div>
               <div className="header__nav-body">
                   <ul>
