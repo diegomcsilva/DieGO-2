@@ -11,6 +11,7 @@ class Header extends Component {
   }
   handleClick() {
     console.log('Click happened');
+    $('body').toggleClass('nav-open');
     if ($('.header__nav-icon-item').hasClass('active')) {
         console.log('tem');
         $('.header__nav-icon-item').removeClass('active');
@@ -28,17 +29,10 @@ class Header extends Component {
               <div className="header__nav-icon" onClick={this.handleClick}>
                 <div className="header__nav-icon-item"></div>
               </div>
-              <div className="header__nav-body">
-                  <ul>
-                    <li><a href="index.html">Eu</a></li>
-                    <li><a href="portfolio.html">Portfólio</a></li>
-                    <li><a href="conheca.html">Let’s GO Learn</a></li>
-                  </ul>
-              </div>
           </div>
           <div className="header__img">
           <a href="/index.html">
-              <img src={logo} alt="Logo DieGO" />
+              <img src={logo} alt="Logo DieGO" width="300" />
           </a>
         </div>
       </div>
