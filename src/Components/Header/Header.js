@@ -9,6 +9,7 @@ class Header extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
+
   handleClick() {
     console.log('Click happened');
     $('body').toggleClass('nav-open');
