@@ -5,10 +5,9 @@
 }
 
 .header__nav {
-    /* background: #cecece; */
     width: 10%;
     position: absolute;
-    z-index: 9;
+    z-index: 9999;
     padding-left: 15px;
     cursor: pointer;
 }

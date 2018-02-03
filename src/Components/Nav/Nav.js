@@ -7,9 +7,9 @@ class Nav extends Component {
   render() {
     return (
         <div className="nav">
-            <a href="/"><div className="nav__item home">Home</div></a>
-            <a href="/contact.html"><div className="nav__item contact">Contato</div></a>
-            <a href="/portfolio.html"><div className="nav__item portfolio">Portfólio</div></a>
+            <a className="nav__item" href="/"><span className="home">Home</span></a>
+            <a className="nav__item" href="/contact.html"><span className="contact">Contato</span></a>
+            <a className="nav__item" href="/portfolio.html"><span className="portfolio">Portfólio</span></a>
         </div>
     );
   }

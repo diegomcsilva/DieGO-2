@@ -1,4 +1,5 @@
 .nav {
+    z-index: 9;
     position: absolute;
     top: 0;
     width: 100%;
@@ -12,13 +13,19 @@
 }
 
 body.nav-open .nav {
-    position: absolute;
+    position: fixed;
+    z-index: 999;
     top: 0;
     width: 100%;
     left: 0%;
     opacity: 1;
     transition: all 1s;
 }
+
+body.nav-open .header__nav {
+    position: fixed;
+}
+
 
 .nav__item {
     width: 100%;
@@ -31,10 +38,12 @@ body.nav-open .nav {
     border-bottom: 1px solid #F4F6F4;
     font-weight: bold;
     color: #262626;
+    display: block;
     transition: all .5s;
 }
 
-.nav__item:hover {
-    opacity: .9;
+.nav__item span:hover {
+    /* opacity: .9; */
+    border-bottom: 4px solid #262626;
     transition: all .5s;
 }

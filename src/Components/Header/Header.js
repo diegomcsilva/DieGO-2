@@ -12,14 +12,14 @@ class Header extends Component {
 
   handleClick() {
     console.log('Click happened');
+    var _item = $('.header__nav-icon-item');
     $('body').toggleClass('nav-open');
-    if ($('.header__nav-icon-item').hasClass('active')) {
-        console.log('tem');
-        $('.header__nav-icon-item').removeClass('active');
-        $('.header__nav-icon-item').addClass('reverse');
+    if (_item.hasClass('active')) {
+        _item.removeClass('active');
+        _item.addClass('reverse');
     } else {
-        $('.header__nav-icon-item').removeClass('reverse');
-        $('.header__nav-icon-item').addClass('active');
+        _item.removeClass('reverse');
+        _item.addClass('active');
     };
   }
 
