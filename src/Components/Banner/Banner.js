@@ -41,17 +41,19 @@ class Banner extends Component {
     };
 
     return (
-        <Slider {...settings}>
-            {
-                this.state.lista.map(function(response) {
-                    return (
-                        <div key={response.id} className="banner__item">
-                            <img src={response.images.standard_resolution.url} width="400" alt={response.tags}/>
-                        </div>
-                    )
-                })
-            }
-        </Slider>
+        <div className="banner">
+            <Slider {...settings}>
+                {
+                    this.state.lista.map(function(response) {
+                        return (
+                            <div key={response.id} className="banner__item">
+                                <img src={response.images.standard_resolution.url} width="400" alt={response.tags}/>
+                            </div>
+                        )
+                    })
+                }
+            </Slider>
+        </div>
         );
     }
 }

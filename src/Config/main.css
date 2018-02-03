@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Artifika');
+
 body {
     background-color: #262525;
+    font-family: 'Artifika', serif;
 }
