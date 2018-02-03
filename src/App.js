@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Header from './Components/Header/Header';
 import Nav from './Components/Nav/Nav';
 import Banner from './Components/Banner/Banner';
+import Cases from './Components/Cases/Cases';
 import './Config/reset.css';
+import './Config/main.css';
 import './App.css';
 
 class App extends Component {
@@ -12,6 +14,7 @@ class App extends Component {
         <Header />
         <Nav />
         <Banner />
+        <Cases />
       </div>
     );
   }

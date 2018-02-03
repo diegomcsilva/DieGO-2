@@ -10,11 +10,13 @@
     z-index: 9999;
     padding-left: 15px;
     cursor: pointer;
+    background-color: #165b82;
+    transition: all 1s;
 }
 
 .header__nav-icon {
     width: 100%;
-    height: 100px;
+    height: 95px;
     margin-left: 10px;
 }
 

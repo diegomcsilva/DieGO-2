@@ -33,7 +33,7 @@ class Banner extends Component {
         autoplaySpeed: 3000,
         focusOnSelect: true,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '60px',
         draggable: true,
         infinite: true,
         slidesToShow: 3,
