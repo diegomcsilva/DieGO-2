@@ -8,8 +8,8 @@ class Nav extends Component {
     return (
         <div className="nav">
             <a className="nav__item" href="/"><span className="home">Home</span></a>
+            <a className="nav__item" href="/portfolio.html"><span className="portfolio">Front End Developer</span></a>
             <a className="nav__item" href="/contact.html"><span className="contact">Contato</span></a>
-            <a className="nav__item" href="/portfolio.html"><span className="portfolio">Portfólio</span></a>
         </div>
     );
   }

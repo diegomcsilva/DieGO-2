@@ -28,16 +28,6 @@ class Cases extends Component {
                                 </div>
                             )
                         })
-
-                        // for (i = 0; i < this.state.cases.length; i++) {
-                        //     return (
-                        //         <div className="case" title={this.state.cases}>
-                        //             <img src={this.state.cases}/>
-                        //         </div>
-                        //     )
-                        // }
-
-                        // console.log(this.state.cases)
                     }
                 </div>
             </div>
