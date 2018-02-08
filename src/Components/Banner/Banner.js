@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+import me from './img/Eu.png'
 import './banner.css';
 import $ from 'jquery';
 
@@ -22,37 +23,20 @@ class Banner extends Component {
             }.bind(this)
           }
         );
-
     }
 
 
   render() {
-    var settings = {
-        accessibility: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        focusOnSelect: true,
-        centerMode: true,
-        centerPadding: '60px',
-        draggable: true,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1
-    };
 
     return (
         <div className="banner">
-            <Slider {...settings}>
-                {
-                    this.state.lista.map(function(response) {
-                        return (
-                            <div key={response.id} className="banner__item">
-                                <img src={response.images.standard_resolution.url} width="400" alt={response.tags}/>
-                            </div>
-                        )
-                    })
-                }
-            </Slider>
+            <div className="banner__img">
+                <img src={me} width="400" alt="Diego Marcelo"/>
+            </div>
+            <div className="banner__text">
+                <h1>Diego Marcelo</h1>
+                <p>O conhecimento não é saber fazer todas as coisas, mas sim ter a humildade de perguntar quando tem dúvida...</p>
+            </div>
         </div>
         );
     }
