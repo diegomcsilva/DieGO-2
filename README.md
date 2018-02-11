@@ -29,3 +29,6 @@
 ## Scripts
 
 ### `gulp`
+
+## Configuração de rotas
+- Router - `./src/Router`

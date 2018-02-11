@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Slider from 'react-slick';
 import me from './img/Eu.png'
 import './banner.css';
 import $ from 'jquery';

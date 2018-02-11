@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Nav from './../Nav/Nav';
 import logo from './img/Logo.png';
 import './header.css';
-import $ from 'jquery';
 
 class Header extends Component {
 
