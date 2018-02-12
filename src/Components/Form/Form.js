@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './form.css';
 import $ from 'jquery';
 import Header from './../Header/Header';
+import Footer from './../Footer/Footer';
 
 class Form extends Component {
 
@@ -44,9 +45,7 @@ class Form extends Component {
 
     return (
         <div className="form">
-            <div className="form__header">
-                <Header />
-            </div>
+            <Header />
             <div className="form__body body">
                 <div className="form__header">
                     <h3 className="form__title">Conte-me o que você deseja</h3>
@@ -67,7 +66,7 @@ class Form extends Component {
                     <label>Telefone</label>
                     <input name="tel" id="tel" type="number"/>
                 </div>
-                <div className="form__item">
+                <div className="form__item mensage">
                     <label>Título</label>
                     <textarea name="mensagem" id="mensage"></textarea>
                 </div>
@@ -75,6 +74,7 @@ class Form extends Component {
             <div className="form__footer">
                 <button type="button" id="sendData" onClick={this.createMensage}>Enviar</button>
             </div>
+            <Footer />
         </div>
         );
     }

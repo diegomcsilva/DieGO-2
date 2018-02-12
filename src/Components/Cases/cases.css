@@ -1,22 +1,22 @@
 .cases__list {
-    display: flex;
+    margin: 0 15%;
+    text-align: center;
 }
 
 .cases__title {
     font-size: 64px;
-    color: #FFFFFF;
+    color: #CECCCC;
     text-align: center;
-    margin: 100px 0 25px;
+    margin: 25px 0 40px;
 }
 
 .case__item {
-    margin: 5px
+    display: inline-block;
+    width: calc(50% - 30px);
+    margin: 0 7.5px 20px;
 }
 
-.case__item:first-child {
-    margin-left: 10px
-}
-
-.case__item:last-child {
-    margin-right: 10px
+.case__item img {
+    width: 100%;
+    height: auto;
 }

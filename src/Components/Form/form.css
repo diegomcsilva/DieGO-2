@@ -1,1 +1,25 @@
+.form__body {
+    margin: 0 15%;
+}
+.form__title {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    text-align: center;
+    color: #FDFDFE;
+}
 
+.form__item input {
+    height: 60px;
+    width: 100%;
+}
+
+.form__item {
+    width: calc(50% - 30px);
+    display: inline-block;
+    margin: 0 7.5px;
+}
+
+.form__item.mensage {
+    width: 100%;
+}
