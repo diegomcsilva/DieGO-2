@@ -1,0 +1,28 @@
+.footer {
+    border-top: 57px solid #303541;
+}
+
+.footer__copyright p {
+        height: 156px;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #FDFDFE;
+    text-align: center;
+}
+
+.footer__mensage p {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #000000;
+}
+
+.footer__mensage {
+    background: #FFD64F;
+    height: 197px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15%;
+}

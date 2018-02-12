@@ -1,0 +1,47 @@
+.presentation {
+    background: #CECCCC;
+}
+
+.presentation__title {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    color: #000000;
+}
+.presentation__sub-title {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    color: #000000;
+        padding-left: 35px;
+}
+.presentation__text {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 150px;
+}
+.presentation__body {
+    padding: 28px 15% 35px;
+}
+.presentation__body-text {
+    display: flex;
+    margin-top: 25px;
+}
+.presentation__footer {
+    background: #FFD64F;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.presentation__footer-text {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #000000;
+    padding: 0px 15%;
+        text-decoration: none;
+}

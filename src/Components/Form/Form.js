@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import './form.css';
 import $ from 'jquery';
+import Header from './../Header/Header';
 
 class Form extends Component {
 
     constructor(props) {
         super(props);
         this.createMensage = this.createMensage.bind(this);
-    }
-
-    componentDidMount() {
     }
 
     createMensage() {
@@ -36,7 +34,7 @@ class Form extends Component {
           },
             success:function(resposta){
               console.log("enviado com sucesso", resposta);
-          }.bind(this)
+            }
           }
         );
     }
@@ -47,9 +45,12 @@ class Form extends Component {
     return (
         <div className="form">
             <div className="form__header">
-                <h3 className="form__title">Conte-me o que você deseja</h3>
+                <Header />
             </div>
-            <div className="form__body">
+            <div className="form__body body">
+                <div className="form__header">
+                    <h3 className="form__title">Conte-me o que você deseja</h3>
+                </div>
                 <div className="form__item titulo">
                     <label>Título</label>
                     <input name="titulo" id="titulo" type="text"/>

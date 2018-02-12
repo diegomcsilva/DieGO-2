@@ -4,3 +4,21 @@ body {
     background-color: #262525;
     font-family: 'Amatic SC', cursive;
 }
+
+html.header-floating .header {
+    position: fixed;
+}
+
+html.header-floating-before .header {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(48, 53, 65, 0.74) 23.76%, rgba(89, 93, 102, 0.595217) 44.2%, rgba(255, 255, 255, 0) 100%), #303541;
+    opacity: .97;
+    height: 130px;
+    border-bottom: 1px solid white;
+    box-shadow: 0 5px 15px -5px black;
+    top: 0;
+}
+
+html.header-floating-before .body {
+    margin-top: 100px;
+}
