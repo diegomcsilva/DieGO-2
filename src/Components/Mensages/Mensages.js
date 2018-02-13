@@ -11,6 +11,28 @@ class Mensages extends Component {
         super(props);
         this.state = {lista : []};
         this.ListMensage = this.ListMensage.bind(this);
+        this.DeleteMensage = this.DeleteMensage.bind(this);
+    }
+    DeleteMensage() {
+        $('body').on('click', '.delete', function() {
+            const _this = $(this);
+            const id = _this.data('key');
+            console.log('key', id);
+            $.ajax({
+                "async": true,
+                "crossDomain": true,
+                "url": "https://app-mensager.herokuapp.com/" + id,
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    "Cache-Control": "no-cache",
+                },
+                "method": "DELETE",
+                success:function(resposta){
+                    console.log("Mensagem Deletada", resposta);
+                    _this.parent().parent().remove();
+                }
+            });
+        })
     }
 
     ListMensage() {
@@ -30,8 +52,15 @@ class Mensages extends Component {
         });
     }
 
+
+    componentdidMount() {
+
+        // this.DeleteMensage();
+    }
+
     componentWillMount() {
         this.ListMensage();
+        this.DeleteMensage();
         // console.log("lista", this.state.lista);
     }
 
@@ -70,6 +99,9 @@ class Mensages extends Component {
                                     <div className="mensage__item mensage">
                                         <h3>Mensagem:</h3>
                                         <p>{data.mensage}</p>
+                                    </div>
+                                    <div className="mensage__item-delete">
+                                        <button className="delete" data-key={data._id}>Deletar Mensage</button>
                                     </div>
                                 </div>
                             )

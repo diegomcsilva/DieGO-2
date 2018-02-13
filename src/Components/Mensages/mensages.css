@@ -27,3 +27,46 @@
     color: #000000;
     padding-left: 30px;
 }
+
+.mensage__item-delete {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mensage__item-delete .delete {
+    font-size: 25px;
+    padding: 25px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.mensage__item-delete .delete:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    top: 52px;
+    background: red;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    z-index: 9;
+}
+
+.mensage__item-delete .delete:hover:before {
+    right: 0px;
+}
