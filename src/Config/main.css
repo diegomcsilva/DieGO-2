@@ -5,9 +5,8 @@ body {
     font-family: 'Amatic SC', cursive;
 }
 
-.body {
+.body{
     margin-top: 50px !important;
-    margin: 0 15%;
 }
 
 html.header-floating .header {
