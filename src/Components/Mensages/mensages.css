@@ -1,1 +1,29 @@
+.mensage__title {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    text-align: center;
+    color: #FDFDFE;
+    margin-bottom: 25px;
+}
 
+.mensage__items {
+    background-color: #CECCCC;
+    margin: 15px 0;
+}
+
+.mensage__items h3 {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 28px;
+    color: #000000;
+    padding-left: 15px;
+}
+
+.mensage__items p {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 26px;
+    color: #000000;
+    padding-left: 30px;
+}

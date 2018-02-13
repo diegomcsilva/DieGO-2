@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './footer.css';
-import $ from 'jquery';
 
 class Footer extends Component {
 
