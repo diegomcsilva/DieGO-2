@@ -51,24 +51,24 @@ class Form extends Component {
                     <h3 className="form__title">Conte-me o que você deseja</h3>
                 </div>
                 <div className="form__item titulo">
-                    <label>Título</label>
                     <input name="titulo" id="titulo" type="text"/>
+                    <label>Título</label>
                 </div>
                 <div className="form__item nome">
-                    <label>Nome</label>
                     <input name="nome" id="nome" type="text"/>
+                    <label>Nome</label>
                 </div>
                 <div className="form__item email">
-                    <label>E-mail</label>
                     <input name="email" id="email" type="email"/>
+                    <label>E-mail</label>
                 </div>
                 <div className="form__item tel">
-                    <label>Telefone</label>
                     <input name="tel" id="tel" type="number"/>
+                    <label>Telefone</label>
                 </div>
                 <div className="form__item mensage">
-                    <label>Título</label>
                     <textarea name="mensagem" id="mensage"></textarea>
+                    <label>Mensagem</label>
                 </div>
             </div>
             <div className="form__footer">

@@ -5,8 +5,13 @@ body {
     font-family: 'Amatic SC', cursive;
 }
 
+.body {
+    margin-top: 50px !important;
+}
+
 html.header-floating .header {
     position: fixed;
+    transition: all .6s;
 }
 
 html.header-floating-before .header {
@@ -17,6 +22,7 @@ html.header-floating-before .header {
     border-bottom: 1px solid white;
     box-shadow: 0 5px 15px -5px black;
     top: 0;
+    transition: all .6s;
 }
 
 html.header-floating-before .body {
