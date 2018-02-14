@@ -32,9 +32,16 @@ class Form extends Component {
               "email": $("#email").val(),
               "tel": $("#tel").val(),
               "name": $("#nome").val(),
-          },
+            },
             success:function(resposta){
               console.log("enviado com sucesso", resposta);
+              $('.form__item, .form__footer').hide();
+              $('.form__title').addClass('sucesso').text('Mensagem enviada com sucesso! =}');
+            },
+            error:function(resposta){
+              console.log("Erro", resposta);
+              $('.form__item, .form__footer').hide();
+              $('.form__title').addClass('erro').text('Ocorreu um erro no envio. Tente novamente!');
             }
           }
         );
