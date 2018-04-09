@@ -5,7 +5,13 @@
     z-index: 9;
     display: flex;
     justify-content: space-between;
-    transition: all .6s;
+    align-items: center;
+    padding: 0 20px;
+    transition: all .6s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 130px;
 }
 
 .header__nav {
@@ -15,7 +21,7 @@
     padding-left: 15px;
     cursor: pointer;
     background-color: #165b82;
-    transition: all 1s;
+    transition: all .6s ease-in-out;
 }
 
 .header__nav-icon {
@@ -29,8 +35,9 @@
 }
 
 .header__img img {
-    margin-left: 25px;
-    margin-top: 25px;
+    /* margin-left: 25px;
+    margin-top: 25px; */
+    transition: all .6s ease-in-out;
 }
 
 div.header__nav-icon-item {

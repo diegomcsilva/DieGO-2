@@ -1,7 +1,7 @@
 .nav {
     display: flex;
     width: 50%;
-margin-top: 25px;
+    /* margin-top: 25px; */
 }
 
 .nav a {
@@ -26,24 +26,23 @@ margin-top: 25px;
     position: relative;
 }
 
-
 .nav__item span:before {
-content: "";
-position: absolute;
-z-index: -1;
-left: 0;
-right: 100%;
-bottom: 0;
-top: 32px;
-background: #FDFDFE;
-height: 4px;
--webkit-transition-property: right;
-transition-property: right;
--webkit-transition-duration: 0.4s;
-transition-duration: 0.4s;
--webkit-transition-timing-function: ease-out;
-transition-timing-function: ease-out;
-z-index: 9;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    top: 32px;
+    background: #FDFDFE;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    z-index: 9;
 }
 
 .nav__item span:hover:before {

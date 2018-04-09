@@ -6,25 +6,34 @@ body {
 }
 
 .body{
-    margin-top: 50px !important;
+    margin-top: 160px;
 }
 
-html.header-floating .header {
-    position: fixed;
-    transition: all .6s;
+/* header flutuante */
+
+html.header-floating .header img {
+    transform: scale(.8);
 }
 
 html.header-floating-before .header {
     width: 100%;
     background: linear-gradient(180deg, rgba(48, 53, 65, 0.74) 23.76%, rgba(89, 93, 102, 0.595217) 44.2%, rgba(255, 255, 255, 0) 100%), #303541;
     opacity: .97;
-    height: 130px;
-    border-bottom: 1px solid white;
+    /* height: 130px; */
+    /* border-bottom: 1px solid white; */
     box-shadow: 0 5px 15px -5px black;
-    top: 0;
-    transition: all .6s;
+    /* top: 0; */
+    transition: all .6s ease-in-out;
 }
 
 html.header-floating-before .body {
-    margin-top: 100px;
+    /* margin-top: 100px; */
+}
+
+/* header flutuante */
+
+/* page loaded */
+
+.loaded {
+
 }
