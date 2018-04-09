@@ -53,31 +53,31 @@ class Form extends Component {
     return (
         <div className="form">
             <Header />
-            <div className="form__body body">
+            <form className="form__body body">
                 <div className="form__header">
                     <h3 className="form__title">Conte-me o que você deseja</h3>
                 </div>
                 <div className="form__item titulo">
-                    <input name="titulo" id="titulo" type="text"/>
+                    <input name="titulo" id="titulo" type="text" placeholder="TITULO"/>
                     <label>Título</label>
                 </div>
                 <div className="form__item nome">
-                    <input name="nome" id="nome" type="text"/>
+                    <input name="nome" id="nome" type="text" placeholder="NOME"/>
                     <label>Nome</label>
                 </div>
                 <div className="form__item email">
-                    <input name="email" id="email" type="email"/>
+                    <input name="email" id="email" type="email" placeholder="E-MAIL"/>
                     <label>E-mail</label>
                 </div>
                 <div className="form__item tel">
-                    <input name="tel" id="tel" type="number"/>
+                    <input name="tel" id="tel" type="number" placeholder="TELEFONE" max="12" min="0"/>
                     <label>Telefone</label>
                 </div>
                 <div className="form__item mensage">
-                    <textarea name="mensagem" id="mensage"></textarea>
+                    <textarea name="mensagem" id="mensage" placeholder="MENSAGEM"></textarea>
                     <label>Mensagem</label>
                 </div>
-            </div>
+            </form>
             <div className="form__footer">
                 <button type="button" id="sendData" onClick={this.createMensage}>Enviar</button>
             </div>

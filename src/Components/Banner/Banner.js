@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import me from './img/Eu.png'
-import ScrollAnimation from 'react-animate-on-scroll';
 import './banner.css';
 import $ from 'jquery';
 
@@ -38,11 +37,6 @@ class Banner extends Component {
                 <h1>Diego Marcelo</h1>
                 <p>O conhecimento não é saber fazer todas as coisas, mas sim ter a humildade de perguntar quando tem dúvida...</p>
             </div>
-            <ScrollAnimation animateIn='fadeIn'>
-              <h1>
-                animateIn
-              </h1>
-              </ScrollAnimation>
         </div>
         );
     }

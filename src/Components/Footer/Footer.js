@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './footer.css';
+import face from './img/face.png';
+import instagram from './img/instagram.png';
+import linkedin from './img/linkedin.png';
 
 class Footer extends Component {
 
@@ -12,6 +15,25 @@ class Footer extends Component {
             </div>
             <div className="footer__copyright">
                 <p>Powered BY Diego MArcelo - 2018</p>
+            </div>
+            <div className="footer__social">
+                <ul>
+                    <li className="footer__social-img">
+                        <a href="/">
+                            <img src={face} alt="Logo DieGO" width="345" title="Diego Marcelo"/>
+                        </a>
+                    </li>
+                    <li className="footer__social-img">
+                        <a href="/">
+                            <img src={instagram} alt="Logo DieGO" width="345" title="Diego Marcelo"/>
+                        </a>
+                    </li>
+                    <li className="footer__social-img">
+                        <a href="/">
+                            <img src={linkedin} alt="Logo DieGO" width="345" title="Diego Marcelo"/>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
         );
